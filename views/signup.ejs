@@ -1,0 +1,8 @@
+<%- include('header', {title: 'this is signup page'}) -%>
+<form action="/user" method="POST">
+  <p>Name: <input type="text" name="name" required/> </p>
+  <p>Email: <input type="email" name="id" required/> </p>
+  <p>Password: <input type="password" name="password" required/> </p>
+  <p><input type="submit" value="Sign up"/> <a href="/signin">Login here</a></p>
+</form>
+<%- include('footer') -%>
