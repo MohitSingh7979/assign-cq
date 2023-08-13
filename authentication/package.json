@@ -1,10 +1,11 @@
 {
   "name": "todo",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "pm2 start server.js",
+    "logs": "pm2 logs",
+    "stop": "pm2 stop server.js",
     "clear": "rm storage/*"
   },
   "author": "",
@@ -13,7 +14,11 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
-    "nodemon": "^3.0.1",
+    "npm": "^9.8.1",
     "uuid": "^9.0.0"
-  }
+  },
+  "devDependencies": {
+    "pm2": "^5.3.0"
+  },
+  "description": ""
 }

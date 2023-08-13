@@ -1,0 +1,10 @@
+<form action="/user" class="container" >
+  <div class="form-group">
+    <p >Email: <input type="email" name="id" class="form-control"   required/> </p>
+    <p>Password: <input type="password" name="password" class="form-control" required/> </p>
+    <p><input type="submit" value="Sign in" class="btn btn-outline-primary btn-lg" /> <a href="/signup"><span class="btn btn-primary btn-lg">Register here</span></a></p>
+  </div>
+  <% for(const warning of warnings) { %>
+    <p style="color: <%= warning.color %>"><%= warning.msg %></p>
+  <% } %>
+</form>
